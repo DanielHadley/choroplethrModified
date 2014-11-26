@@ -150,7 +150,7 @@ Choropleth = R6Class("Choropleth",
         axis.ticks.margin = unit(0, "cm"),
         panel.margin      = unit(0, "lines"),
         plot.margin       = unit(c(0, 0, 0, 0), "lines"),
-        plot.title        = element_text(size=14), # Enlarge, left-align title
+        plot.title        = element_text(size=16), # Enlarge, left-align title
         complete          = TRUE
       )
     },
