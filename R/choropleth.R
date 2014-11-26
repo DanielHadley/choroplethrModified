@@ -62,7 +62,7 @@ Choropleth = R6Class("Choropleth",
       self$prepare_map()
       
       ggplot(self$choropleth.df, aes(long, lat, group = group)) +
-        geom_polygon(aes(fill = value), color = "dark grey", size = 0.2) + 
+        geom_polygon(aes(fill = value), color = "grey", size = 0.2) + 
         self$get_scale() +
         self$theme_clean() + 
         ggtitle(self$title)
@@ -150,6 +150,7 @@ Choropleth = R6Class("Choropleth",
         axis.ticks.margin = unit(0, "cm"),
         panel.margin      = unit(0, "lines"),
         plot.margin       = unit(c(0, 0, 0, 0), "lines"),
+        plot.title        = element_text(size=14), # Enlarge, left-align title
         complete          = TRUE
       )
     },
