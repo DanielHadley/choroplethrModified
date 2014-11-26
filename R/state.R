@@ -31,7 +31,7 @@ StateChoropleth = R6Class("StateChoropleth",
         df_state_labels = df_state_labels[!df_state_labels$name %in% c("alaska", "hawaii"), ]
         df_state_labels = df_state_labels[df_state_labels$name %in% private$zoom, ]
 
-        choropleth = choropleth + geom_text(data = df_state_labels, aes(long, lat, label = label, group = NULL), color = 'black')
+        choropleth = choropleth + geom_text(size=4, data = df_state_labels, aes(long, lat, label = label, group = NULL), color = 'white')
       }
       
       choropleth
